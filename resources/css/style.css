@@ -1,20 +1,68 @@
 /*Elements*/
-
-* {
-    display: flex;
-}
-
 html {
     font-size: 16px;
     font-family: 'Gayathri', sans-serif;
+    /*font-family: 'Kumbh Sans', sans-serif;*/
 }
-
 body {
-
+    display: block;
+    margin: 0 auto;
+    background-color: white;
 }
-
 header {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: 0;
+    /*height: 100px;*/
+    width: 100%;
+    z-index: 10;
+    padding-top: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+nav p {
+    display: inline-block;
+    padding: 10px 10px;
+}
+main {
+    padding-top: 35px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1,h2,h3,p {
+    margin: 0;
+    padding: 10px;
+}
+h1 {
+    font-size: 2.65rem;
+}
+nav p {
+    font-size: 1.5rem;
+}
+img {
+    /*width: 100%;*/
 }
 
-/*Classes*/
+/*Sections*/
+.about {
+    display: flex;
+
+    height: 400px;
+    background-image: url("../images/leaves.jpg");
+    padding-top: 50px;
+}
+.about .content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin: auto;
+    color: white;
+}
