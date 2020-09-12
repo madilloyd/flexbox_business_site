@@ -1,8 +1,10 @@
-/*Elements*/
+/*ELEMENTS*/
 html {
     font-size: 16px;
-    font-family: 'Gayathri', sans-serif;
+    /*font-family: 'Gayathri', sans-serif;*/
     /*font-family: 'Kumbh Sans', sans-serif;*/
+    /*font-family: 'Syne', sans-serif;*/
+    font-family: 'Noto Sans JP', sans-serif;
 }
 body {
     display: block;
@@ -50,10 +52,10 @@ img {
     /*width: 100%;*/
 }
 
-/*Sections*/
+/*SECTIONS*/
+/*About*/
 .about {
     display: flex;
-
     height: 400px;
     background-image: url("../images/leaves.jpg");
     padding-top: 50px;
@@ -65,4 +67,31 @@ img {
     background-color: rgb(255, 255, 255, 0.3);
     margin: auto;
     color: white;
+}
+.about h2 a {
+    color: white;
+}
+.about h3 {
+    text-align: center;
+}
+
+/*Portfolio Section*/
+.portfolio {
+    background-color: #f2f2f2;
+}
+.portfolio h2 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.portfolio-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+.portfolio img {
+    max-width: 60%;
+    height: auto;
+}
+.portfolio .pets img {
+    
 }
