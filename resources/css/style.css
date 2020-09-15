@@ -29,7 +29,8 @@ nav {
 }
 nav p {
     display: inline-block;
-    padding: 10px 10px;
+    padding: 30px 60px;
+    text-decoration: underline;
 }
 main {
     padding-top: 35px;
@@ -45,18 +46,18 @@ h1,h2,h3,p {
 h1 {
     font-size: 2.65rem;
 }
+h2 {
+    font-size: 2rem;
+}
 nav p {
     font-size: 1.5rem;
-}
-img {
-    /*width: 100%;*/
 }
 
 /*SECTIONS*/
 /*About*/
 .about {
     display: flex;
-    height: 400px;
+    height: 500px;
     background-image: url("../images/leaves.jpg");
     padding-top: 50px;
 }
@@ -67,6 +68,7 @@ img {
     background-color: rgb(255, 255, 255, 0.3);
     margin: auto;
     color: white;
+    padding: 40px;
 }
 .about h2 a {
     color: white;
@@ -78,6 +80,7 @@ img {
 /*Portfolio Section*/
 .portfolio {
     background-color: #f2f2f2;
+    padding-bottom: 75px;
 }
 .portfolio h2 {
     text-align: center;
@@ -86,12 +89,52 @@ img {
 }
 .portfolio-grid {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 .portfolio img {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
+    box-shadow: -15px 15px #bdbdbd;
+    margin-left: auto;
+    margin-right: auto;
 }
-.portfolio .pets img {
-    
+
+/*Team Section*/
+.team-grid {
+  display: flex;
+  flex-wrap: row nowrap;
+  background-image: url("../images/blue.jpg");
+  height: 600px;
+  color: white;
+}
+.team-grid h2 a {
+    align-content: center;
+    width: 100%;
+    padding: 30px;
+    color: white;
+}
+.team-grid img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 150px;
+    justify-content: space-around;
+    box-shadow: 15px 15px #bdbdbd;
+}
+.team-grid .text{
+    text-align: start;
+}
+.team-grid h3 {
+    text-align: center;
+}
+.team-grid .text h4 {
+    padding: 0;
+    margin: 0;
+}
+/*Contact Section*/
+.contact {
+    display: inline-flex;
+    justify-content: right;
+    padding-top: 100px;
 }
