@@ -31,18 +31,20 @@ nav p {
     display: inline-block;
     padding: 30px 60px;
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 main {
     padding-top: 35px;
 }
 div {
     display: block;
+    unicode-bidi: isolate;
 }
 a {
     text-decoration: none;
     color: black;
 }
-h1,h2,h3,p {
+h1,h2,h3,h4,p {
     margin: 0;
     padding: 10px;
 }
@@ -51,9 +53,6 @@ h1 {
 }
 h2 {
     font-size: 2rem;
-}
-nav p {
-    font-size: 1.5rem;
 }
 
 /*SECTIONS*/
@@ -110,40 +109,48 @@ nav p {
 }
 
 /*Team Section*/
-.team-grid {
-  display: flex;
-  flex-wrap: row nowrap;
-  background-image: url("../images/blue.jpg");
+.team {
+    background-image: url("../images/offwhite.jpg");
+    background-size: 100vw;
   height: 600px;
-  color: white;
 }
-.team-grid h2{
-    align-content: center;
+.team h2 a{
     width: 100%;
     padding: 30px;
     color: white;
+    align-content: center;
 }
+.team-grid {
+    display: flex;
+    flex-wrap: row nowrap;
+    padding-bottom: 200px;
+  }
 .team-grid img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     margin-top: 150px;
-    justify-content: space-around;
-    box-shadow: 15px 15px 10px #bdbdbd;
+    justify-content: space-around; 
+}
+.teammate {
+    padding: 10px;
 }
 .team-grid .text{
     text-align: start;
 }
 .team-grid h3 {
+    color: darkslategray;
     text-align: center;
 }
 .team-grid .text h4 {
+    text-align: center;
     padding: 0;
     margin: 0;
 }
 
+
 /*Contact Section*/
 .contact {
-    display: inline-flex;
-    justify-content: right;
-    padding-top: 100px;
+    padding-top: 300px;
+    display:inline-flex;
+    text-align: center;
 }
