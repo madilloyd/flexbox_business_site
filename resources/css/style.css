@@ -10,6 +10,7 @@ body {
     display: block;
     margin: 0 auto;
     background-color: white;
+    text-align: center;
 }
 header {
     display: flex;
@@ -29,7 +30,7 @@ nav {
 }
 nav p {
     display: inline-block;
-    padding: 30px 60px;
+    padding: 20px 60px;
     text-decoration: underline;
     font-size: 1.5rem;
 }
@@ -53,7 +54,22 @@ h1 {
 }
 h2 {
     font-size: 2rem;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
+h3 {
+    display: block;
+    font-size: 1.75em;
+    unicode-bidi: isolate;
+}
+h4 {
+    display: block;
+    unicode-bidi: isolate;
+}
+/*img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}*/
 
 /*SECTIONS*/
 /*About*/
@@ -110,41 +126,47 @@ h2 {
 
 /*Team Section*/
 .team {
-    display: flex;
-    width: 100vw;
     background-image: url("../images/offwhite.jpg");
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    
 }
 .team h2 a {
-    display: inline-block;
     padding: 30px;
     color: white;
     align-content: center;
 }
 .team-grid {
     display: flex;
-    flex-wrap: row nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 200px;
   }
-.team-grid img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 150px;
-    justify-content: space-around; 
-}
-.teammate {
-    padding: 10px;
-}
 .team-grid .text{
     text-align: start;
 }
 .team-grid h3 {
-    color: darkslategray;
+    color: black;
     text-align: center;
 }
 .team-grid .text h4 {
     text-align: center;
     padding: 0;
     margin: 0;
+}
+.teammate {
+    padding: 10px;
+    color: gray;
+    flex-basis: 280px;
+}
+.teammate img {
+    max-width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
